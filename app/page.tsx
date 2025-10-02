@@ -67,9 +67,10 @@ export default function ShortenerForm() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-white p-6">
+    <main className="z-0 flex flex-col items-center justify-center min-h-screen bg-green-500 p-6">
       {stats && (
-  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-5 py-3 rounded-lg w-64 border-3 border-[#249365]">
+	  
+  <div className="absolute z-2 top-4 right-4 bg-white/90 backdrop-blur-md px-5 py-3 rounded-lg w-64 border-3 border-[#249365]">
     <p className="text-sm text-gray-600 mb-2">📊 DB Usage</p>
     <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
       <div
@@ -92,8 +93,13 @@ export default function ShortenerForm() {
     </p>
   </div>
 )}
-	  
-	  <div className="w-full max-w-lg pb-2 p-8 bg-white rounded-lg border-3 border-[#249365]">
+	  <div className="xxx z-1">
+	     <div className="wave wave1"></div>
+	     <div className="wave wave2"></div>
+	     <div className="wave wave3"></div>
+	     <div className="wave wave4"></div>
+	  </div>
+	  <div className="w-full z-2 max-w-lg pb-2 p-8 bg-white rounded-lg border-3 border-[#249365]">
         <h1 className="flex items-center justify-center gap-3 text-3xl font-extrabold text-gray-800 mb-6">
   <img src="/nbi.png" alt="Logo" className="w-18 h-18" />URL Shortener</h1>
 
@@ -120,7 +126,7 @@ export default function ShortenerForm() {
                        placeholder-gray-400 shadow-sm"
           />
 		  
-		  <button type="submit" className="mt-1 relative px-10 py-3 font-medium text-white transition duration-300 bg-[#249365] rounded-md hover:bg-[#2F9C6F] ease"><span className="absolute bottom-0 left-0 h-full"><svg viewBox="0 0 487 487" className="w-auto h-full opacity-100 object-stretch" xmlns="http://www.w3.org/2000/svg"><path d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z" fill="#FFF" fill-rule="nonzero" fill-opacity=".1"></path></svg></span><span className="absolute top-0 right-0 w-12 h-full"><svg viewBox="0 0 487 487" className="object-cover w-full h-full" xmlns="http://www.w3.org/2000/svg"><path d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z" fill="#FFF" fill-rule="nonzero" fill-opacity=".1"></path></svg></span><span className="relative font-semibold">Shorten!</span></button>
+		  <button type="submit" className="mt-1 relative px-10 py-3 font-medium text-white transition duration-300 bg-[#249365] rounded-md hover:bg-[#2F9C6F] ease"><span className="absolute bottom-0 left-0 h-full"><svg viewBox="0 0 487 487" className="w-auto h-full opacity-100 object-stretch" xmlns="http://www.w3.org/2000/svg"><path d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z" fill="#FFF" fillRule="nonzero" fillOpacity=".1"></path></svg></span><span className="absolute top-0 right-0 w-12 h-full"><svg viewBox="0 0 487 487" className="object-cover w-full h-full" xmlns="http://www.w3.org/2000/svg"><path d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z" fill="#FFF" fillRule="nonzero" fillOpacity=".1"></path></svg></span><span className="relative font-semibold">Shorten!</span></button>
           
         </form>
 
@@ -147,6 +153,7 @@ export default function ShortenerForm() {
             <p className="text-gray-700 text-sm font-semibold text-red-200">2025 - IKOIT</p>
           </div>
       </div>
+	    
     </main>
   );
 }
