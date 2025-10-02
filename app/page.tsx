@@ -82,10 +82,10 @@ export default function ShortenerForm() {
         style={{ width: `${stats.percentage}%` }}
       ></div>
     </div>
-    {/* <p className="mt-2 text-xs text-gray-700">
+    /* <p className="mt-2 text-xs text-gray-700">
       {(stats.estimatedSize / 1024 / 1024).toFixed(2)} MB /{" "}
       {stats.maxSize / 1024 / 1024} MB
-    </p> */}
+    </p> */
     <p className="text-xs text-gray-500 italic mt-2">
       ({stats.method === "accurate" ? "Akurat via Postgres" : "Estimasi via row count"})
     </p>
