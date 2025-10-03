@@ -36,6 +36,12 @@ body {
 	background-size: 1000px 100px;
 }
 
+.credit{
+	bottom:0;
+	left:0;
+	position: absolute;
+}
+
 .wave.wave1{
     animation: animate 2s linear infinite;
 	opacity: 0.8;

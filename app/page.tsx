@@ -67,7 +67,7 @@ export default function ShortenerForm() {
   };
 
   return (
-    <main className="z-0 flex flex-col items-center justify-center min-h-screen bg-green-500 p-6">
+    <main className="z-0 flex flex-col items-center justify-center min-h-screen bg-white p-6">
       {stats && (
 	  
   <div className="absolute z-2 top-4 right-4 bg-white/90 backdrop-blur-md px-5 py-3 rounded-lg w-64 border-3 border-[#249365]">
@@ -98,8 +98,11 @@ export default function ShortenerForm() {
 	     <div className="wave wave2"></div>
 	     <div className="wave wave3"></div>
 	     <div className="wave wave4"></div>
+	     <div className="credit z-1 m-2">
+            <p className="text-white text-xs font-semibold">2025 - IKOIT</p>
+         </div>
 	  </div>
-	  <div className="w-full z-2 max-w-lg pb-2 p-8 bg-white rounded-lg border-3 border-[#249365]">
+	  <div className="w-full z-2 max-w-lg p-8 bg-white rounded-lg border-3 border-[#249365]">
         <h1 className="flex items-center justify-center gap-3 text-3xl font-extrabold text-gray-800 mb-6">
   <img src="/nbi.png" alt="Logo" className="w-18 h-18" />URL Shortener</h1>
 
@@ -149,11 +152,7 @@ export default function ShortenerForm() {
             </a>
           </div>
         )}
-		 <div className="mt-4 p-2 text-center">
-            <p className="text-gray-700 text-sm font-semibold text-red-200">2025 - IKOIT</p>
-          </div>
       </div>
-	    
     </main>
   );
 }
