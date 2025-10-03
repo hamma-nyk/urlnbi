@@ -70,7 +70,7 @@ export default function ShortenerForm() {
     <main className="z-0 flex flex-col items-center justify-center min-h-screen bg-white p-6">
       {stats && (
 	  
-  <div className="absolute z-2 top-4 right-4 bg-white/90 backdrop-blur-md px-5 py-3 rounded-lg w-64 border-3 border-[#249365]">
+  <div className="absolute z-2 top-4 right-4 bg-white/90 backdrop-blur-md px-5 py-3 rounded-lg w-64 border border-gray-200 shadow-sm">
     <p className="text-sm text-gray-600 mb-2">📊 DB Usage</p>
     <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
       <div
@@ -103,7 +103,7 @@ export default function ShortenerForm() {
          </div>
 	  </div>
 	  <div className="w-full z-2 max-w-lg p-8 bg-white rounded-lg border-3 border-[#249365]">
-        <h1 className="flex items-center justify-center gap-3 text-3xl font-extrabold text-gray-800 mb-6">
+        <h1 className="flex items-center justify-center gap-3 text-3xl font-extrabold text-gray-700 mb-6">
   <img src="/nbi.png" alt="Logo" className="w-18 h-18" />URL Shortener</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
